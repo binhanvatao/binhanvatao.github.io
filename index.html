@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="picture/3.jpg"/>
+<title> My Angel ♥ </title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+			<audio autoplay="autopaly">
+					<source src="music/Seeds - Hai to Gensou no Grimgar.mp3" type="audio/mp3">
+			</audio>
+        <div id="main">
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">~</span><br />
+			<span class="space"/><span class="comments">*20-09-2000</span><br />
+			<span class="space"/><span class="comments">~</span><br />
+			Boy name = <span class="keyword">Bi</span><br />
+			Girl name = Lan<span class="keyword"> Anh</span><br />
+			Ngày = 20-09-2018<br />
+			<br />
+			<span class="space"/><span class="keyword">~*~ NHÂN NGÀY SINH NHẬT TAO GỬI TẶNG MÀY ~*~</span><br />
+			<span class="placeholder"/>Thay mặt Chủ Tịch Nước<br />
+			<span class="comments">♥ Thay mặt Hội đồng nhân dân Việt Nam</span><br />
+			<span class="placeholder"/>Tui xin chúc <span class="keyword">LAN ANH</span> nhân dịp sinh nhật này<br />
+			<span class="comments">♥ Càng lớn càng xinh ( Thua xa tui chắc )</span><br />
+			<span class="placeholder"/>Học càng lúc càng giỏi<br />
+			<span class="comments">♥ Càng lớn càng bớt điên</span><br />
+			<span class="placeholder"/>Cao lên tí nữa đi nhé :) ( Biết tui thua xa rồi )<br />
+			<span class="comments">♥ Tập ăn rau đi mau ăn chống lớn</span><br />
+			<span class="placeholder"/>Năm mới tới rồi mọi buồn phiền bỏ qua hết đi<br />
+			<span class="placeholder"/>Tui có làm gì thì nhớ xí xóa hết đi nghen hí hí<br />
+			<span class="placeholder">Cho dù là ngay bây giờ, ngay lúc này</span><br />
+			<span class="placeholder">Hay tương lai sau này đi nữa...</span><br />
+			<span class="comments">♥ Tui muốn bạn </span><span class="keyword">luôn</span><span class="comments"> cười .</span><br />
+			<br>
+			Tao muốn nói với mày rằng:<br />
+			<span class="keyword"> HAPPY BIRTHDAY MY ANGEL </span><br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Mày với tao quen biết được chừng này rồi đấy
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+				HAPPY BIRTHDAY :> <br/>
+					<div class="signature">- Bi<div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="text-align:center;margin:0px 0; font:normal 12px/20px 'MicroSoft YaHei';">
+</div>
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2018, 4, 25);
+together.setHours(02);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
